@@ -1,0 +1,8 @@
+START TRANSACTION;
+SELECT introduced FROM softdrink WHERE sd_id =1;
+UPDATE softdrink SET introduced = 02/09/1877 WHERE sd_id =1;
+SELECT introduced FROM softdrink WHERE sd_id =1;
+COMMIT;
+ROLLBACK;
+SELECT introduced FROM softdrink WHERE sd_id =1;
+
